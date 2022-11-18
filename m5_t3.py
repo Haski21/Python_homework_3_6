@@ -23,18 +23,14 @@ Out: 22 бутылки
 
 '''
 num = int(input('Enter num: '))
-if num in range(5,20):
-# if num in '5,6,7,8,9,10,11,12,13,14,15,16,17,18,19':
+if num % 100 // 10 == 1:
     print(num,'бутылок')
 elif num % 10 == 1:
     print(num,'бутылка')
-elif num % 10 in range(2,5):
+elif 2<= num % 10 < 5:
     print(num,'бутылки')
-    #а можно как-то в один range? ===>
-elif num % 10 in range(5,10) or num % 10 == 0:
+else:
     print(num,'бутылок')
 
 
-
-
-
+ 
